@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+	<body>
+		<script> // Lesley Beijl Pizza Calculator
+
+		alert("pizza prijzen:")
+		alert("small = €3,-")
+		alert("medium = €5,-")
+		alert("large = €7,-")
+
+			small = prompt("hoeveel small pizza's wilt u bestellen?")
+			medium = prompt("hoeveel medium pizza's wilt u bestellen?")
+			large = prompt("hoeveel large pizza's wilt u bestellen?")
+
+			document.write("<h2>Uw bestelling:</h2>")
+
+			aantaltotaal = parseInt(small) + parseInt(medium) + parseInt(large)
+
+			document.write(small + " aantal small pizza's <br>")
+			document.write(medium + " aantal medium pizza's <br>")
+			document.write(large + " aantal large pizza's <br>")
+			document.write(aantaltotaal + " totaal aantal pizza's <br>")
+			
+			document.write("<h2> De prijzen:</h2>")
+
+			const prijssmall = 3
+			const prijsmedium = 5
+			const prijslarge = 7
+
+			small = (small + prijssmall);
+			medium = (medium + prijsmedium);
+			large = (large + prijslarge);
+
+			const prijs = parseInt(small) + parseInt(medium) + parseInt(large);
+
+			document.write("totale prijs: €" + prijs)
+
+		</script>
+	</body>
+</html>
